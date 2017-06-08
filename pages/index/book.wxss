@@ -1,1 +1,8 @@
 /* pages/index/book.wxss */
+
+.top-view {
+  background-color: #3FA9F5;
+  color: white;
+  padding: 20rpx 40rpx;
+  text-align: right;
+}

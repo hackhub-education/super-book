@@ -20,3 +20,15 @@
   width: 100%;
   border-radius: 0;
 }
+
+.text-lg {
+  font-size: 2rem;
+}
+
+.text-sm {
+  font-size: .5rem;
+}
+
+.block {
+  display: block;
+}

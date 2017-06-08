@@ -1,2 +1,7 @@
 <!--pages/index/book.wxml-->
 <button class="btn-action btn-bottom">开始记账</button>
+
+<view class="top-view">
+  <text class="block text-lg">{{bookInfo.total}}</text>
+  <text class="block text-sm">当前余额</text>
+</view>
