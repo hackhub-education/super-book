@@ -6,5 +6,6 @@
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
+    <text class="user-total">您的账上还剩 {{total}} 元</text>
   </view>
 </view>

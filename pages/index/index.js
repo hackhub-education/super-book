@@ -19,7 +19,8 @@ Page({
     app.getUserInfo(function(userInfo){
       //更新数据
       that.setData({
-        userInfo:userInfo
+        userInfo:userInfo,
+        total: app.globalData.bookInfo.total
       })
     })
   }
