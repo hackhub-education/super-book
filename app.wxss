@@ -7,10 +7,16 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}
 
-text {
-  display: block;
-  margin-bottom: 50rpx;
-  text-align: center;
+.btn-action {
+  background-color: #3FA9F5;
+  color:white;
+}
+
+.btn-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0;
 }

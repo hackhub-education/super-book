@@ -1,2 +1,2 @@
 <!--pages/index/book.wxml-->
-<text>pages/index/book.wxml</text>
+<button class="btn-action btn-bottom">开始记账</button>
