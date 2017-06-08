@@ -4,6 +4,21 @@
     "pages/logs/logs",
     "pages/index/book"
   ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/book",
+        "text": "账本",
+        "iconPath": "assets/img/book-icon.png",
+        "selectedIconPath": "assets/img/book-icon-selected.png"
+      },
+      {
+      "pagePath": "pages/index/index",
+      "text": "关于我",
+      "iconPath": "assets/img/me-icon.png",
+      "selectedIconPath": "assets/img/me-icon-selected.png"
+    }]
+  },
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
