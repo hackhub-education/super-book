@@ -5,3 +5,14 @@
   <text class="block text-lg">{{bookInfo.total}}</text>
   <text class="block text-sm">当前余额</text>
 </view>
+
+<view class="history-view">
+
+  <block wx:for-items="{{bookInfo.history}}" wx:for-item="item" wx:key="*item">
+  <navigator class="item-view" url="item?id={{item.id}}">
+    <text>{{item.name}}</text>
+    <text class="right">{{item.value}}</text>
+  </navigator>
+  </block>
+
+</view>
