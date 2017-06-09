@@ -1,4 +1,4 @@
-// pages/index/book.js
+// pages/book/index.js
 var app = getApp()
 Page({
 
@@ -13,8 +13,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var bookInfo = app.globalData.bookInfo
+    var history = bookInfo.history
+    for (var i = 0; i < history.length; i++) {
+      bookInfo.total += history[i].value
+    }
     this.setData({
-      bookInfo: app.globalData.bookInfo,
+      bookInfo: bookInfo,
     })
   },
 
@@ -65,5 +70,11 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+
+  newItem: function() {
+    wx.navigateTo({
+      url: 'new'
+    })
   }
 })

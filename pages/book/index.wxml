@@ -1,5 +1,5 @@
-<!--pages/index/book.wxml-->
-<button class="btn-action btn-bottom">开始记账</button>
+<!--pages/book/index.wxml-->
+<button class="btn-action btn-bottom" bindtap="newItem">开始记账</button>
 
 <view class="top-view">
   <text class="block text-lg">{{bookInfo.total}}</text>

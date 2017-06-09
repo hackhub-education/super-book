@@ -1,4 +1,4 @@
-/* pages/index/book.wxss */
+/* pages/book/index.wxss */
 
 .top-view {
   background-color: #3FA9F5;
@@ -9,5 +9,5 @@
 
 .item-view {
   border-bottom: 1px solid #f0f0f0;
-  padding: 20rpx;
+  padding: 20rpx 40rpx;
 }

@@ -2,12 +2,13 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/index/book"
+    "pages/book/index",
+    "pages/book/new"
   ],
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/index/book",
+        "pagePath": "pages/book/index",
         "text": "账本",
         "iconPath": "assets/img/book-icon.png",
         "selectedIconPath": "assets/img/book-icon-selected.png"
