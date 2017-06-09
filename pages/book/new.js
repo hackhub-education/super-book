@@ -1,11 +1,14 @@
 // pages/book/new.js
+var app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    date: "2017-01-01",
+    value: 0,
+    name: ""
   },
 
   /**
@@ -62,5 +65,10 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+
+  itemSubmit: function(e) {
+    app.pushItem(e.detail.value)
+    wx.navigateBack();
   }
 })

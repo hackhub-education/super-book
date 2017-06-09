@@ -24,6 +24,10 @@ App({
       })
     }
   },
+  pushItem: function(item) {
+    this.globalData.bookInfo.history.push(item)
+    console.log(this.globalData.bookInfo.history)
+  },
   globalData:{
     userInfo:null,
     bookInfo: {

@@ -1,2 +1,21 @@
 <!--pages/book/new.wxml-->
-<text>pages/book/new.wxml</text>
+<form bindsubmit="itemSubmit">
+  <view class="field">
+    <text>日期</text>
+    <picker class="right" mode="date" name="date" value="{{date}}">
+      <view>{{date}}</view>
+    </picker>
+  </view>
+
+  <view class="field">
+    <text>金额</text>
+    <input class="right" name="value" type="digit" placeholder="0.00" />
+  </view>
+
+  <view class="field">
+    <text>备注</text>
+    <textarea name="name" placeholder="备注内容" />
+  </view>
+
+  <button class="btn-action btn-bottom" form-type="submit">提交</button>
+</form>

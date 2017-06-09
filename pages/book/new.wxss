@@ -1,1 +1,19 @@
 /* pages/book/new.wxss */
+
+page{
+    background-color:#fafafa;
+}
+
+.field {
+  background-color: white;
+  margin: 10rpx 0;
+  padding: 20rpx 40rpx;
+}
+
+.field input {
+  text-align: right;
+}
+
+.field textarea {
+  margin-top: 20rpx;
+}
