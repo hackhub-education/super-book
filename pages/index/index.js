@@ -23,5 +23,16 @@ Page({
         total: app.globalData.bookInfo.total
       })
     })
+  },
+  onShow: function() {
+    var bookInfo = app.globalData.bookInfo
+    var history = bookInfo.history
+    bookInfo.total = 0
+    for (var i = 0; i < history.length; i++) {
+      bookInfo.total += Number(history[i].value)
+    }
+    this.setData({
+      total: bookInfo.total,
+    })
   }
 })

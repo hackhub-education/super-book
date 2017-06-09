@@ -32,21 +32,7 @@ App({
     userInfo:null,
     bookInfo: {
       total: 0,
-      history: [
-        {
-          id: 0,
-          name: "电脑",
-          value: -1500,
-          date: "2017-06-05"
-        },
-        {
-          id: 1,
-          name: "网站开发",
-          value: 2000,
-          date: "2017-06-06"
-        },
-
-      ]
+      history: []
     }
   }
 })
