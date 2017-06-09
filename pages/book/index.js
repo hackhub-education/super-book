@@ -13,14 +13,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var bookInfo = app.globalData.bookInfo
-    var history = bookInfo.history
-    for (var i = 0; i < history.length; i++) {
-      bookInfo.total += history[i].value
-    }
-    this.setData({
-      bookInfo: bookInfo,
-    })
+    
   },
 
   /**
@@ -34,7 +27,15 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    var bookInfo = app.globalData.bookInfo
+    var history = bookInfo.history
+    bookInfo.total = 0
+    for (var i = 0; i < history.length; i++) {
+      bookInfo.total += Number(history[i].value)
+    }
+    this.setData({
+      bookInfo: bookInfo,
+    })
   },
 
   /**

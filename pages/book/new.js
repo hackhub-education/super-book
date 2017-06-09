@@ -67,6 +67,12 @@ Page({
   
   },
 
+  bindDateChange: function (e) {
+    this.setData({
+      date: e.detail.value
+    })
+  },
+
   itemSubmit: function(e) {
     app.pushItem(e.detail.value)
     wx.navigateBack();

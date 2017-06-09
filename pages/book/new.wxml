@@ -2,7 +2,7 @@
 <form bindsubmit="itemSubmit">
   <view class="field">
     <text>日期</text>
-    <picker class="right" mode="date" name="date" value="{{date}}">
+    <picker class="right" mode="date" name="date" value="{{date}}" bindchange="bindDateChange">
       <view>{{date}}</view>
     </picker>
   </view>
